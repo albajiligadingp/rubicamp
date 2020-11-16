@@ -1,0 +1,87 @@
+<mxfile host="65bd71144e" modified="2020-11-06T06:42:33.527Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="C5JjM7scHE-d5MkNRrJH" version="13.6.5">
+    <diagram id="N3AUwTJN79e-NUXifzJg" name="Page-1">
+        <mxGraphModel dx="1092" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="95" value="dosen" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="245" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="nip primary key&#10;namadosen" style="align=left;strokeColor=#6F0000;fillColor=#a20025;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#ffffff;" parent="95" vertex="1">
+                    <mxGeometry y="30" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="mahasiswa" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="450" width="160" height="110" as="geometry">
+                        <mxRectangle x="240" y="140" width="100" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="67" value="nim primary key&#10;nama&#10;alamat&#10;umur&#10;jurusan foreign key" style="align=left;strokeColor=#6F0000;fillColor=#a20025;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontStyle=0;fontColor=#ffffff;" parent="66" vertex="1">
+                    <mxGeometry y="30" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#a20025;strokeColor=#6F0000;" parent="1" source="69" target="67" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="350" y="680" as="sourcePoint"/>
+                        <mxPoint x="450" y="580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="jurusan" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="480" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="idjurusan primary key&#10;namajurusan" style="align=left;strokeColor=#6F0000;fillColor=#a20025;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#ffffff;" parent="68" vertex="1">
+                    <mxGeometry y="30" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="memilih" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;shadow=0;dashed=0;startSize=30;strokeColor=#6F0000;strokeWidth=2;fontSize=14;fontColor=#ffffff;fillColor=#a20025;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="289" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERoneToMany;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=1;fillColor=#a20025;strokeColor=#6F0000;" parent="1" source="66" target="79" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="670" y="680" as="sourcePoint"/>
+                        <mxPoint x="770" y="580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="103" value="mengambil" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;shadow=0;dashed=0;startSize=30;strokeColor=#6F0000;strokeWidth=2;fontSize=14;fontColor=#ffffff;fillColor=#a20025;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="359" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="290" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;exitX=1.009;exitY=0.158;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#a20025;strokeColor=#6F0000;" parent="1" source="96" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="340" y="420" as="sourcePoint"/>
+                        <mxPoint x="490" y="283" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" value="mengajar" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;shadow=0;dashed=0;startSize=30;strokeColor=#6F0000;strokeWidth=2;fontSize=14;fontColor=#ffffff;fillColor=#a20025;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="252" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="291" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;rounded=0;fillColor=#a20025;strokeColor=#6F0000;" parent="1" source="67" target="98" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="850" y="590" as="sourcePoint"/>
+                        <mxPoint x="950" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="292" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;fillColor=#a20025;strokeColor=#6F0000;" parent="1" source="79" target="97" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="810" y="300" as="sourcePoint"/>
+                        <mxPoint x="910" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" value="memperoleh" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;shadow=0;dashed=0;startSize=30;strokeColor=#6F0000;strokeWidth=2;fontSize=14;fontColor=#ffffff;fillColor=#a20025;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="mempunyai" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;shadow=0;dashed=0;startSize=30;strokeColor=#6F0000;strokeWidth=2;fontSize=14;fontColor=#ffffff;fillColor=#a20025;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="253" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="matakuliah" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="230" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="idmk primary key&#10;namamk&#10;sks&#10;dosen foreign key" style="align=left;strokeColor=#6F0000;fillColor=#a20025;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#ffffff;" parent="78" vertex="1">
+                    <mxGeometry y="30" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="report" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="340" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="idreport primary key&#10;nim foreign key&#10;dosen foreign key&#10;matakuliah foreign key&#10;nilai" style="align=left;strokeColor=#6F0000;fillColor=#a20025;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#ffffff;" parent="97" vertex="1">
+                    <mxGeometry y="30" width="160" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
